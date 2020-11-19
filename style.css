@@ -1,0 +1,137 @@
+/* font-family: 'Open Sans', sans-serif; */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 87vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+.container {
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  height: 73vh;
+  max-width: 40rem;
+  width: 90%;
+  margin: 8rem auto;
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-list_heading {
+  text-transform: uppercase;
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form {
+  margin: 2rem 0 4rem;
+  border-radius: 0.3rem;
+
+  display: flex;
+}
+
+.input_todo {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #cccccc;
+  padding: 0.4rem 0.6rem;
+}
+
+.input_btn {
+  padding: 0 1.5rem;
+  border: none;
+  border-radius: inherit;
+  background-color: #f37a09;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.input_btn:hover {
+  background-color: #e37208;
+}
+
+.todo-list {
+  border-radius: 0.3rem;
+  padding: 0.8rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-list:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.todo-list:nth-of-type(2n + 1) {
+  background-color: #12c2e9;
+}
+
+.todo-list:nth-of-type(2n) {
+  background-color: #f64f59;
+}
+
+.todo-list_item {
+  margin-right: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.done {
+  text-decoration: line-through #000;
+}
+
+.todo-list-btns-box {
+  display: flex;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+}
+
+.btn-complete {
+  margin-right: 0.5rem;
+  background-color: #fff;
+  color: green;
+  transition: all 0.2s;
+}
+
+.btn-complete:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.btn-delete {
+  background-color: #fff;
+  color: red;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: red;
+  color: #fff;
+}
